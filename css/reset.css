@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* ==============================
+   Reset + Base CSS
+   ============================== */
+
+/* ----------------------------------
+   1. 全要素リセット & box-sizing
+----------------------------------- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------
+   2. HTML5要素のブロック化
+----------------------------------- */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* ----------------------------------
+   3. bodyの基本スタイル（ベース） 
+----------------------------------- */
+body {
+  line-height: 1.5; /* リセットより可読性向上 */
+  font-family: "游明朝", "Yu Mincho", "Hiragino Mincho ProN", "MS PMincho", serif;
+  color: #000;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ----------------------------------
+   4. リスト・引用・テーブルのリセット
+----------------------------------- */
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ----------------------------------
+   5. 画像・メディアのリセット
+----------------------------------- */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----------------------------------
+   6. 最低限のリンク・フォームのベーススタイル
+----------------------------------- */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  appearance: none;
+}
+
+/* ----------------------------------
+   7. テキスト要素の改行対応
+----------------------------------- */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  font-weight: normal; /* ベーススタイルとして統一 */
+}
