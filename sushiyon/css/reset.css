@@ -1,0 +1,77 @@
+@charset "euc-jp";
+/* ===== リセットCSS ===== */
+
+/* box-sizing をグローバルに適用 */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* デフォルトの margin/padding をリセット */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+	margin: 0;
+}
+
+/* 一貫した line-height とスムーズなフォント継承 */
+body {
+	line-height: 1.5;
+}
+
+/* リストのスタイルを削除 */
+ul[role='list'], ol[role='list'] {
+	list-style: none;
+}
+
+/* デフォルトの list-style を削除 */
+ul, ol {
+	margin: 0;
+ 	padding: 0;
+	list-style: none;
+}
+
+/* anchor 初期化 */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* button, input などフォーム要素の初期化 */
+button, input, select, textarea {
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	color: inherit;
+	outline: none;
+}
+
+/* 画像やメディアの挙動を安定化 */
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* テキストオーバーフロー防止 */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+/* フォーム要素のリサイズを制御 */
+textarea {
+	resize: vertical;
+}
+
+/* HTML5セマンティック要素の表示を安定化 */
+article, aside, footer, header, nav, section, main {
+	display: block;
+}
+
+/* テーブルのスタイルをリセット */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS Document */
+
