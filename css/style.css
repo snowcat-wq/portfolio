@@ -168,7 +168,7 @@ header nav a {
 }
 @media (max-width: 660px) {
   .scroll {
-    bottom: 30px;
+    bottom: 150px;
   }
   .scroll span {
     font-size: 9px;
