@@ -512,6 +512,19 @@ img.no-border {
   transition: background-color 0.3s ease;
   width: fit-content;
 }
+.contents-btn-wframe {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 40px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
 
 /*view-works*/
 .view-works {
@@ -579,21 +592,24 @@ img.no-border {
 /* --- フェードイン btn --- */
 .contents-btn,
 .contents-btn-w,
-.contents-btn-white {
+.contents-btn-white,
+.contents-btn-wframe {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 .contents-btn.show,
 .contents-btn-w.show,
-.contents-btn-white.show {
+.contents-btn-white.show,
+.contents-btn-wframe.show {
   opacity: 1;
   transform: translateY(0);
 }
 /* --- hover --- */
 .contents-btn.show:hover,
 .contents-btn-w.show:hover,
-.contents-btn-white.show:hover {
+.contents-btn-white.show:hover,
+.contents-btn-wframe.show {
   opacity: 0.6;
 }
 @media (max-width: 660px) {
@@ -636,7 +652,7 @@ img.no-border {
     font-size: 15px;
     line-height: 25px;
   }
-  .contents-btn, .contents-btn-w, .contents-btn-white {
+  .contents-btn, .contents-btn-w, .contents-btn-white, .contents-btn-wframe {
     padding: 8px 20px;
     font-size: 12px;
   }
