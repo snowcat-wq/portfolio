@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ---------------------------
   // スクロールでフェードイン（ボタン）
   // ---------------------------
-  const btnTargets = document.querySelectorAll('.contents-btn, .contents-btn-w, .contents-btn-white');
+  const btnTargets = document.querySelectorAll('.contents-btn, .contents-btn-w, .contents-btn-white, .contents-btn-wframe');
 
   const btnObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
