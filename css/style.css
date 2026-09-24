@@ -387,6 +387,7 @@ section h2.small {
   display: block;
   text-decoration: none;
   overflow: hidden;
+  outline: none;
 }
 .img-wrapper {
   overflow: hidden;
@@ -396,7 +397,8 @@ section h2.small {
   height: auto;
   display: block;
   box-sizing: border-box;
-  border: 1px solid #eee;
+  /*border: 1px solid #eee;*/
+  outline: none;
   transition: transform 0.4s ease;
 }
 .about-bg .img-wrapper img {
@@ -431,9 +433,9 @@ img.no-border {
   line-height: 33px;
 }
 .text-li {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 25px;
-  padding-top: 10px;
+  /*padding-top: 5px; 非表示*/ 
 }
 .text-other {
   font-size: 17px;
